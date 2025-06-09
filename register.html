@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NAMMA MART - Register</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+    <script src="firebase-auth.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">NAMMA MART</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="auth-container">
+        <h2>Register for NAMMA MART</h2>
+        <form id="register-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password" required />
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" required />
+            <button type="submit">Register</button>
+        </form>
+        <div id="register-error" class="error-message"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 NAMMA MART. All rights reserved.</p>
+    </footer>
+</body>
+</html>
